@@ -53,8 +53,10 @@ captcha_message
     {% include 'entry' %}
   </div>
   <div id="category-list-{{ post._id }}" class="category-list">
+    {% if categories %}
     <p>Categories:
     {% include 'categories' %}
+    {% endif %}
 	</p>
   </div>
   {% if post.comments|length %}
