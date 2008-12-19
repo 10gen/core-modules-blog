@@ -28,7 +28,7 @@ Template to display commenting section
 
 </script>
 
-<div id="comments">
+<div id="xgen-comments">
    <h2 class="comments-open-header">{{ blogDTO.getCommentsOpenHeader|default:"Add a Comment" }}</h2>
    <div class="comments container">
        <form method="post" name="comment" id="comments-form" onsubmit="return customFormSubmit()">

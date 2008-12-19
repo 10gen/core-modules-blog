@@ -52,7 +52,7 @@ captcha_message
   <div id="entry-{{ post._id }}">
     {% include 'entry' %}
   </div>
-  <div id="category-list-{{ post._id }}" class="category-list">
+  <div id="category-list-{{ post._id }}" class="xgen-category-list">
     {% if categories %}
     <p>Categories:
     {% include 'categories' %}
@@ -60,7 +60,7 @@ captcha_message
 	</p>
   </div>
   {% if post.comments|length %}
-    <div id="comments">
+    <div id="xgen-comments">
       <h2>Comments</h2>
       {% for c in post.comments %}
         <div class="container {% cycle "zebra" "" %}">

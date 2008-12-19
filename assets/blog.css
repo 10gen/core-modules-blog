@@ -110,11 +110,11 @@ img {
 
 /* Blog Entry */
 
-div.entry-content {
+div.xgen-entry-content {
 	margin-bottom: 3em;
 }
 
-div.category-list {
+div.xgen-category-list {
 	margin-bottom: 3em;
 }
 
@@ -126,7 +126,7 @@ form.search p {
 
 /* Comments */
 
-#comments h2 {
+#xgen-comments h2 {
 	margin-top: 3em;
 	margin-bottom: 0;
 	padding-bottom: 4px;
@@ -134,42 +134,42 @@ form.search p {
 	font-weight: normal;
 }
 
-#comments h3 {
+#xgen-comments h3 {
 	margin-top: 0;
 	padding-bottom: .5em;
 }
 
-#comments h3.user-admin {
+#xgen-comments h3.user-admin {
 	color: red;
 }
 
-#comments .num-comment {
+#xgen-comments .num-comment {
 	font-weight: bold;
 }
 
-#comments div.container {
+#xgen-comments div.container {
 	padding: .5em;
 }
 
-#comments div.comments {
+#xgen-comments div.comments {
 	padding: .5em 0 0 0;
 	border-top: 1px solid #ddd;
 }
 
-#comments div.comments input.text {
+#xgen-comments div.comments input.text {
 	width: 50%;
 }
 
-#comments div.comments textarea {
+#xgen-comments div.comments textarea {
 	margin-bottom: 6px;
 	width: 100%;
 }
 
-#comments div.zebra {
+#xgen-comments div.zebra {
 	background-color: #eee;
 }
 
-#comments p {
+#xgen-comments p {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -178,17 +178,17 @@ form.search p {
 
 /* Right Column */
 
-#blog-right h2 {
+#xgen-blog-right h2 {
 	margin-top: 2em;
 	border-bottom: 1px solid #ddd;
 }
 
-#blog-right p {
+#xgen-blog-right p {
 	margin-top: 0;
 	background-image: none;
 }
 
-#blog-right a, #blog-right a:visited {
+#xgen-blog-right a, #xgen-blog-right a:visited {
 	display:block;
 	padding: 4px;
 	color: #666;
@@ -196,7 +196,7 @@ form.search p {
 	border-bottom: none;
 }
 
-#blog-right a:hover {
+#xgen-blog-right a:hover {
 	display:block;
 	color: #333;
 	background-color: #eee;
@@ -205,25 +205,25 @@ form.search p {
 
 /* Special Styling for image within post-snippet */
 
-div.post-snippet img {
+div.xgen-post-snippet img {
     max-width: 150px;
     max-height: 120px;
     float: left;
     padding: 10px;
 }
 
-div.post-snippet a:hover {
+div.xgen-post-snippet a:hover {
 	border: none;
 }
 
 /* Powered by 10gen footer */
 
-#blog-footer {
+#xgen-blog-footer {
 	padding-top: 4em; 
 	padding-bottom: 2em;
 }
 
-#blog-footer p {
+#xgen-blog-footer p {
 	padding-top: .5em;
 	border-top: 1px solid #ddd;
 	text-align: left;
@@ -234,19 +234,19 @@ div.post-snippet a:hover {
 
 /* Layout - By Default set to 950px centered, 600px left, 50px gutter, 300px right */
 
-#blog-main, #blog-footer {
+#xgen-blog-main, #xgen-blog-footer {
 	margin: 0 auto;
 	width: 950px; 
 	clear: both;
 }
 
-#blog-left {
+#xgen-blog-left {
     margin: 0;
 	width: 600px;
 	float:left;
 }
 
-#blog-right {
+#xgen-blog-right {
 	margin: 0; 
 	width: 300px;
 	float: right;

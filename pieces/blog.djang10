@@ -19,9 +19,9 @@
 {% block pageheader %}
 {% endblock %}
 
-<div id="blog-main">
+<div id="xgen-blog-main">
 
-<div id="blog-right">
+<div id="xgen-blog-right">
 
   {% block rightnav %}
 
@@ -46,7 +46,7 @@
 
 </div>
 
-<div id="blog-left">
+<div id="xgen-blog-left">
   {% block title %}
     {% if blogDTO.getPageTitle %}
       <h1>{{ blogDTO.getPageTitle }}</h1>
@@ -60,7 +60,7 @@
 
 </div>
 
-<div id="blog-footer">
+<div id="xgen-blog-footer">
   <p>Powered by 10gen.</p>
 </div>
 

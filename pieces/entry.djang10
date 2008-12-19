@@ -61,7 +61,7 @@ dateline - Text appearing before the date field.  Defaults to "".
 {% endif %}
 </p>
 
-<div class="entry-content">
+<div class="xgen-entry-content">
   {{ post.content | safe }}
 </div>
 
