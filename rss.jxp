@@ -81,6 +81,18 @@ function clean( s ){
     
     s = s.replace( /</g , "&lt;" );
     s = s.replace( />/g , "&gt;" );
+    
+    s = s.replace( /[\n\r]/g , " " );
+
+    var clean = "";
+
+    for ( var i=0; i<s.length; i++ ){
+        var point = s.charCodeAt( i );
+        if ( point >= 16 && point <= 22 )
+            continue;
+        clean += s[i];
+    }
+    s = clean;
 
     return s;
 }
