@@ -73,7 +73,7 @@ BlogDTO.setUpPaging = function(r, result, pageSize) {
     if(page) { // currentPage defaults to 1
         this._currentPage = parseInt(page[1]);
     }
-    this._numPages = Math.ceil( result.totalNumPosts / pageSize );
+    this._hasNext = result.hasNext;
 }
 
 BlogDTO.prototype.isFirstPage = function() {
@@ -81,7 +81,7 @@ BlogDTO.prototype.isFirstPage = function() {
 }
 
 BlogDTO.prototype.isLastPage = function() {
-    return this._currentPage == this._numPages;
+    return !this._hasNext;
 }
 
 BlogDTO.prototype.getPrevPageLink = function() {
