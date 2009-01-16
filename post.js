@@ -337,15 +337,14 @@ Post.prototype.getUrl = function( r ){
     if ( ! r && request )
         r = request;
 
-  if (this.crosspost_channel && this.crosspost_name) {
-    return this.getBaseUrl(this.crosspost_channel) + '/' + this.crosspost_name;
-  }
-
     // FIXME: Hack for phantom posts. Blog module shouldn't care, but this
     // is really the most elegant fix.
     if ( this.name.startsWith('http://') ) return this.name;
 
-  return this.getBaseUrl() + '/' + this.name;
+    var u = r ? "http://" + r.getHeader( "Host" ) : "";
+    u += routes.find( Blog.routes ) +"/"+ this.name;
+
+    return u;
 };
 
 Post.prototype.getBaseUrl = function(channel) {
